@@ -8,6 +8,7 @@
   body{
     font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
     height:100%;
+
   }
   body::before{
     content: ' ';
@@ -21,13 +22,14 @@
     height:1000%;
     opacity:.2;
   }
-  #background-image{
+.row{
+display:table;
+
+margin-bottom:20px;
+}
+  .container{
 
   }
-  #background-image::before{
-
-  }
-
 
   h2{
     font-family: "Arial Black", Gadget, sans-serif;
@@ -37,6 +39,12 @@
   }
 .column{
   float:left;
+  width:50%;
+  display:table-cell;
+
+}
+.column-header{
+  float:left;
 }
 #portfolio{
   padding-top:250px;
@@ -44,9 +52,9 @@
   </style>
     </head>
 <body>
-  <div class="container" id="background-image">
-  <div class="row">
-          <div class="column">
+
+  <div class="row-header">
+          <div class="column-header">
     <h2 style="margin-bottom:5px;">
         Computer Science <br>Project Portfolio
     </h2>
@@ -60,14 +68,15 @@
             <a target="_blank" href="https://www.linkedin.com/in/owen-dreikosen"> LinkedIn </a>
           </p>
         </div>
-        <div class="column">
+        <div class="column-header">
           <img style="padding-top:25px" src="https://media.licdn.com/dms/image/C4E03AQGoxzg8b6SQWg/profile-displayphoto-shrink_200_200/0?e=1540425600&v=beta&t=x8ftSj8G0yXRFLaHt4oAru3dJW0T_0_wSVZDV7vONuE" />
-
-        </div>
 </div>
+        </div>
+      </div>
 
 <div id="portfolio">
-
+  <div class="row">
+    <div class="column" id="java">
     <h3>
         <u> Java </u>
     </h3>
@@ -90,6 +99,9 @@
             </ul>
         </li>
     </ul>
+  </div>
+
+    <div class="column" id="python">
     <h3>
         <u> Python </u>
     </h3>
@@ -102,7 +114,10 @@
             </ul>
         </li>
     </ul>
-
+</div>
+</div>
+<div class="row">
+<div class="column" id="C-Assembly">
     <h3>
         <u> C & Assembly (MIPS) </u>
     </h3>
@@ -134,6 +149,8 @@
         </li>
 
     </ul>
+  </div>
+  <div class="column" id="web">
     <h3> <u> Web Development Languages </u></h3>
     <ul>
         <li>
@@ -152,5 +169,6 @@
     </ul>
   </div>
 </div>
+  </div>
 </body>
 </html>
