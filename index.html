@@ -7,9 +7,27 @@
   <style>
   body{
     font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-
+    height:100%;
+  }
+  body::before{
+    content: ' ';
+    background:url("Images/unc-logo.jpg") no-repeat center center fixed;
+    background-size:contain;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    z-index: -1;
+    height:1000%;
+    opacity:.2;
+  }
+  #background-image{
 
   }
+  #background-image::before{
+
+  }
+
 
   h2{
     font-family: "Arial Black", Gadget, sans-serif;
@@ -26,6 +44,7 @@
   </style>
     </head>
 <body>
+  <div class="container" id="background-image">
   <div class="row">
           <div class="column">
     <h2 style="margin-bottom:5px;">
@@ -131,6 +150,7 @@
             </ul>
         </li>
     </ul>
-  </d iv>
+  </div>
+</div>
 </body>
 </html>
